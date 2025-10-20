@@ -37,15 +37,42 @@
                         <a class="nav__link--primary" href="#">Sign Up</a>
                     </li>
                 </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </nav>
+        <div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__links">
+                <a class="modal__link">About</a>
+                <a class="modal__link">Blog</a>
+                <a class="modal__link">Pricing</a>
+                <a class="modal__link">Contact Us</a>
+                <a class="modal__link">Login</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
+            </div>
+        </div>
         <header>
             <div class="container">
                 <div class="header row">
-                    <div class="header__discription">
-                        <h1 class="header__discription--title">Beautiful React Templates <span class="purple">for
+                    <div class="header__description">
+                        <h1 class="header__description--title">Beautiful React Templates <span class="purple">for
                                 you.</span></h1>
-                        <p class="header__discription--para">Our templates are easy to setup, understand and customize.
+                        <p class="header__description--para">Our templates are easy to setup, understand and customize.
                             Fully modular components with a varity of pages and components.
                         </p>
                         <div class="header__email">
@@ -171,13 +198,13 @@
         <section id="quality">
             <div class="container">
                 <div class="row">
-                    <div class="quality__discription">
+                    <div class="quality__description">
                         <h4 class="section__tag"><span class="purple">QUALITY WORK</span></h4>
                         <h2 class="section__title">Designed & Developed by <span class="purple">Professionals</span>
                         </h2>
-                        <div class="section__para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+                        <p class="section__para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
                             voluptatibus quas expedita eius nisi quos reiciendis ullam quisquam. Praesentium, deserunt.
-                        </div>
+                        </p>
                         <button class="btn">Learn More</button>
                     </div>
                     <figure class="quality__img--wrapper">
@@ -219,7 +246,7 @@
                             </g>
                         </svg>
                     </figure>
-                    <div class="steps__discription">
+                    <div class="steps__description">
                         <h4 class="section__tag"><span class="purple">STEPS</span></h4>
                         <h2 class="steps__title">Easy to Get <span class="purple">Started.</span></h2>
                         <div class="step__list">
@@ -256,7 +283,7 @@
         <section id="values">
             <div class="container">
                 <div class="row">
-                    <div class="values__discription">
+                    <div class="values__description">
                         <div class="section__tag"><span class="purple">VALUES</span></div>
                         <h2 class="section__title">We Always Abide by Our <span class="purple">Principles</span></h2>
                         <div class="section__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut deserunt
@@ -378,7 +405,7 @@
                         <img src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
                             class="testimonials__img" alt="">
                     </figure>
-                    <div class="testimonials__discription">
+                    <div class="testimonials__description">
                         <div class="section__tag"><span class="purple">TESTiMONIALS</span></div>
                         <h2 class="section__title">Our Clients <span class="purple">Love Us.</span></h2>
                         <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nisi
@@ -458,8 +485,22 @@
 
     <footer id="footer">
         <div class="row footer__row">
+            <svg viewBox="0 0 600 600" class="footer__blob--1">
+                <g transform="translate(300,300)">
+                    <path
+                        d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+                        fill="rgba(80,17,204)"></path>
+                </g>
+            </svg>
+            <svg viewBox="0 0 600 600" class="footer__blob--2">
+                <g transform="translate(300,300)">
+                    <path
+                        d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+                        fill="rgba(80,17,204)"></path>
+                </g>
+            </svg>
             <div class="links">
-                <div class="link"> <div></div>
+                <div class="link">
                     <div class="column__title">MAIN</div>
                     <a href="#" class="column__link">Blog</a>
                     <a href="#" class="column__link">FAQS</a>
@@ -493,6 +534,29 @@
                     <a href="#" class="column__link">Privacy Policy</a>
                     <a href="#" class="column__link">Terms of Service</a>
                     <a href="#" class="column__link">Disclaimer</a>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__info">
+                <div class="footer__logo">
+                    <figure class="footer__logo--wrapper">
+                        <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" class="footer__img" alt="">
+                    </figure>
+                    <h5 class="footer__logo--text">Treact Inc.</h5>
+                </div>
+                <div class="footer__copyright">
+                    © 2018 Treact Inc. All Rights Reserved.
+                </div>
+                <div class="footer__socials">
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
                 </div>
             </div>
         </div>
