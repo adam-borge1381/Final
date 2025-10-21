@@ -194,7 +194,7 @@ nav {
   max-height: 100vh;
   overflow-y: hidden;
 }
-.menu--open, .modal {
+.menu--open .modal {
   visibility: visible;
   opacity: 1;
   transform: translateX(0);
@@ -215,7 +215,7 @@ nav {
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
 }
-.menu__link--primary {
+.modal__link--primary {
   color: #f7fafc;
   padding: 12px 32px;
   background: #6415ff;
@@ -1370,6 +1370,7 @@ footer {
 
   .plan {
     margin-right: 0px;
+    width: 100%;
   }
 
   #features .section__title,
@@ -1463,6 +1464,13 @@ footer {
   .step {
     flex-direction: column;
     align-items: center;
+  }
+
+  .step__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .step__description {
